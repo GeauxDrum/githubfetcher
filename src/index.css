@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgray
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.profileCard {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 40px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.aligned {
+  text-align: center;
+}
+
+.handle {
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.seeRepos {
+  margin-top: 30px;
 }

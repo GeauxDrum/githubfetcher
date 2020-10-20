@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-export default function MainInput() {
+export default function MainInput({ goFetch }) {
   const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submitted: ", input);
+    goFetch(input);
     setInput("");
   };
 
