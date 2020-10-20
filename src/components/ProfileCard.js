@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProfileCard({ handle, userInfo }) {
+export default function ProfileCard({ handle, userInfo, getRepos }) {
   return userInfo ? (
     <div className="centered">
       <div className="profileCard">
@@ -15,7 +15,14 @@ export default function ProfileCard({ handle, userInfo }) {
         <div className="repos">Repos: {userInfo.public_repos}</div>
         <div className="url">URL: {userInfo.html_url}</div>
         <div className="aligned">
-          <button className="seeRepos">See Repos</button>
+          <button
+            onClick={() => {
+              getRepos(userInfo.repos_url);
+            }}
+            className="seeRepos"
+          >
+            See Repos
+          </button>
         </div>
       </div>
     </div>

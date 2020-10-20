@@ -12,28 +12,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.mainTitle {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px;
+}
+.titleWrapper{
+  text-align: center
+}
 .profileCard {
   border: 2px solid black;
   border-radius: 5px;
   padding: 20px;
   margin: 40px;
 }
-
 .centered {
   display: flex;
   justify-content: center;
 }
-
 .aligned {
   text-align: center;
 }
-
 .handle {
   font-size: 60px;
   padding-bottom: 30px;
 }
-
+.submit {
+  font-size: 30px;
+}
+.input {
+  font-size: 30px;
+}
 .seeRepos {
   margin-top: 30px;
+}
+.repoWrapper {
+  margin: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+.activeRepos {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.repoView {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 40px;
 }
